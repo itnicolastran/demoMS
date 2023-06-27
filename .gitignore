@@ -1,0 +1,10 @@
+.idea/
+*/target/*
+hotelService/.mvn/wrapper/maven-wrapper.jar
+hotelService/.mvn/wrapper/maven-wrapper.properties
+ratingService/.mvn/wrapper/maven-wrapper.jar
+ratingService/.mvn/wrapper/maven-wrapper.properties
+serviceRegistry/.mvn/wrapper/maven-wrapper.jar
+serviceRegistry/.mvn/wrapper/maven-wrapper.properties
+UserService/.mvn/wrapper/maven-wrapper.jar
+UserService/.mvn/wrapper/maven-wrapper.properties
