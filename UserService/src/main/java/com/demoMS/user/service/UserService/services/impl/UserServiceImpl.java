@@ -10,6 +10,7 @@ import com.demoMS.user.service.UserService.services.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 
@@ -54,6 +55,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Cacheable(key = "#userID", value = "users")
     public UserResponse getUser(String userID) {
         LOGGER.debug("getUser() ::");
         User user =repository.findById(userID).orElseThrow(()
